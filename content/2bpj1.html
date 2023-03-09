@@ -2,6 +2,7 @@
         <head>
         <title>2a-pj1agx</title>
         <meta charset="utf-8">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -94,6 +95,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -139,4 +141,95 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='Aboutt.html'>Aboutt</a><ul><li><a href='Github.html'>Github</a></li></ul><li><a href='Resume.html'>Resume</a><li><a href='pj1.html'>pj1</a><ul><li><a href='2apj1.html'>2apj1</a><ul><li><a href='2aw3.html'>2aw3</a></li></ul><li><a href='2bpj1.html'>2bpj1</a><ul><li><a href='2bw3.html'>2bw3</a></li></li></ul></ul><li><a href='協同設計.html'>協同設計</a><li><a href='allowExt.html'>allowExt</a><li><a href='Tools.html'>Tools</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">2aw3 << <a href='2aw3.html'>Previous</a> <a href='2bw3.html'>Next</a> >> 2bw3<br /><h1>2bpj1</h1>
+<p>bg6 -&gt; 刪除 cmsimde, 重建 cmsimde 目錄</p>
+<p>bg22 -&gt; 刪除 cmsimde, 重建 cmsimde 目錄</p>
+<p>2b 總共會有 31 組:</p>
+<p></p>
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/']});
+}
+</script>
+<p id="brython_div1"></p>
+<script type="text/python3">
+from browser import document, html
+
+def check_content(url, key_word):
+    data = open(url + "/").read()
+    if key_word in data:
+        return True
+    else:
+        return False
+
+brython_div1 = document["brython_div1"]
+c = "2b"
+url = "https://mde.tw/studlist/2023spring/" + c + ".txt"
+data = open(url).read().split("\n")
+mdecd2023_2b= "https://mdecd2023.github.io/2b-pj1bg"
+repo = "https://github.com/mdecd2023/2b-pj1bg"
+grp_title = "2b-pj1bg"
+total_grp_num = 31
+for i in range(1, total_grp_num+1):
+    grp_site_url = mdecd2023_2b + str(i)
+    repo_url = repo + str(i)
+    link = html.A(grp_title+str(i), href=grp_site_url)
+    repo_link = html.A("repo", href=repo_url)
+    brython_div1 <= link
+    brython_div1 <= "(" + repo_link + ")"
+    if check_content(grp_site_url, "vacant") == True:
+        brython_div1 <= " no web site yet"
+    brython_div1 <= html.BR()
+</script><br />2aw3 << <a href='2aw3.html'>Previous</a> <a href='2bw3.html'>Next</a> >> 2bw3</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

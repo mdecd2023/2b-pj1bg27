@@ -1,8 +1,2 @@
-# cmsimde
-cmsimde main scripts
-
-for Replit:
-
-git submodule update --init --recursive 
-
-pip install flask flask_cors bs4 lxml pelican markdown gevent
+# 2a-pj1agx
+https://mdecd2023.github.io/2a-pj1agx
